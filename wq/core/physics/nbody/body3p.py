@@ -6,7 +6,7 @@ from math import sqrt
 
 def accelerationOf(unit, m1, m2, m3):
 
-    def acceleration(t, x):
+    def acceleration(t, x, v):
         x1 = x[0]
         y1 = x[1]
         x2 = x[2]
