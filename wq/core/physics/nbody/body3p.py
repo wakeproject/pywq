@@ -14,10 +14,10 @@ def accelerationOf(unit, m1, m2, m3):
         x3 = x[4]
         y3 = x[5]
 
-        r12 = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
-        r13 = Math.sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3))
+        r12 = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+        r13 = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3))
         r21 = r12
-        r23 = Math.sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3))
+        r23 = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3))
         r31 = r13
         r32 = r23
 
@@ -67,10 +67,10 @@ def derivativeOf(unit, m1, m2, m3):
         vx3 = phase[10]
         vy3 = phase[11]
 
-        r12 = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
-        r13 = Math.sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3))
+        r12 = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
+        r13 = sqrt((x1 - x3) * (x1 - x3) + (y1 - y3) * (y1 - y3))
         r21 = r12
-        r23 = Math.sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3))
+        r23 = sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3))
         r31 = r13
         r32 = r23
 
