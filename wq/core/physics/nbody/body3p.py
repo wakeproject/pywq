@@ -26,24 +26,24 @@ def accelerationOf(unit, m1, m2, m3):
         a12y = a12 * (y2 - y1) / r12
 
         a13 = unit.G * m3 / r13 / r13
-        a13x = a13 * (x1 - x3) / r13
-        a13y = a13 * (y1 - y3) / r13
+        a13x = a13 * (x3 - x1) / r13
+        a13y = a13 * (y3 - y1) / r13
 
         a21 = unit.G * m1 / r21 / r21
         a21x = a21 * (x1 - x2) / r21
         a21y = a21 * (y1 - y2) / r21
 
         a23 = unit.G * m2 / r23 / r23
-        a23x = a23 * (x2 - x3) / r23
-        a23y = a23 * (y2 - y3) / r23
+        a23x = a23 * (x3 - x2) / r23
+        a23y = a23 * (y3 - y2) / r23
 
         a31 = unit.G * m1 / r31 / r31
         a31x = a31 * (x1 - x3) / r31
         a31y = a31 * (y1 - y3) / r31
 
         a32 = unit.G * m2 / r32 / r32
-        a32x = a32 * (x3 - x2) / r32
-        a32y = a32 * (y3 - y2) / r32
+        a32x = a32 * (x2 - x3) / r32
+        a32y = a32 * (y2 - y3) / r32
 
         return np.array([a12x + a13x, a12y + a13y,
                          a21x + a23x, a21y + a23y,
