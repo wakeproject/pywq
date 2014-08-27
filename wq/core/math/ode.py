@@ -13,7 +13,7 @@ def heun(derivative):
     def solve(t, x, dt):
         k1 = derivative(t, x) * dt
         k2 = derivative(t + dt, x + k1) * dt / 2
-        return (t + dt, x + (k1 + k2) * dt / 2))
+        return (t + dt, x + (k1 + k2) * dt / 2)
     return solve
 
 """
