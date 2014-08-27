@@ -4,7 +4,7 @@ import numpy as np
 
 from math import sqrt
 
-def accelerationOf(unit, m1, m2):
+def accelerationOf(unit, m1, m2, m3):
 
     def acceleration(t, x):
         x1 = x[0]
@@ -51,7 +51,7 @@ def accelerationOf(unit, m1, m2):
 
     return acceleration
     
-def derivativeOf(unit, m1, m2):
+def derivativeOf(unit, m1, m2, m3):
 
     def derivative(t, phase):
         x1  = phase[0]
